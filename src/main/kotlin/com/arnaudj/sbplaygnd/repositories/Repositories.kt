@@ -1,6 +1,6 @@
-package com.arnaudj.sbplaygnd.sbplayground.repositories
+package com.arnaudj.sbplaygnd.repositories
 
-import com.arnaudj.sbplaygnd.sbplayground.entities.User
+import com.arnaudj.sbplaygnd.entities.User
 import org.springframework.data.repository.CrudRepository
 
 interface UserRepository : CrudRepository<User, Long> {

@@ -1,7 +1,7 @@
-package com.arnaudj.sbplaygnd.sbplayground
+package com.arnaudj.sbplaygnd
 
-import com.arnaudj.sbplaygnd.sbplayground.entities.User
-import com.arnaudj.sbplaygnd.sbplayground.repositories.UserRepository
+import com.arnaudj.sbplaygnd.entities.User
+import com.arnaudj.sbplaygnd.repositories.UserRepository
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

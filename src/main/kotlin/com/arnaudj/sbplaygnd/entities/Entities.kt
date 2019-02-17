@@ -1,4 +1,4 @@
-package com.arnaudj.sbplaygnd.sbplayground.entities
+package com.arnaudj.sbplaygnd.entities
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue

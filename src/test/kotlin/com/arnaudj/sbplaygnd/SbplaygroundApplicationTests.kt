@@ -1,4 +1,4 @@
-package com.arnaudj.sbplaygnd.sbplayground
+package com.arnaudj.sbplaygnd
 
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
