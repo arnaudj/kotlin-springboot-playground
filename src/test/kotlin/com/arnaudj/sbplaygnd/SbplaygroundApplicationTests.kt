@@ -10,8 +10,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension
 @SpringBootTest
 class SbplaygroundApplicationTests {
 
-	@Test
-	fun contextLoads() {
-	}
+    @Test
+    fun contextLoads() {
+    }
 
 }

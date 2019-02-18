@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class SbplaygroundApplication
 
 fun main(args: Array<String>) {
-	runApplication<SbplaygroundApplication>(*args)
+    runApplication<SbplaygroundApplication>(*args)
 }

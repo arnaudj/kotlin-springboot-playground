@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.ResponseBody
 @Controller
 class SimpleController {
 
-
     @GetMapping("/")
     @ResponseBody
     fun home(model: Model): String {
