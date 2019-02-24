@@ -15,7 +15,13 @@ class UserRestController(val userRepository: UserRepository) {
     fun findAll(): Iterable<User> = userRepository.findAll()
 
     @GetMapping("/find/{login}")
-    fun findOne(@PathVariable login: String): ResponseEntity<User> { // nb: @RequestParam() is for query string parameters
+    fun findOne(@PathVariable login: String): User { // nb: @RequestParam() is for query string parameters
+        return userRepository.findByLogin(login).orElseThrow { ElementNotFoundException("user") }
+    }
+
+    // ResponseEntity based error handling
+    @GetMapping("/find2/{login}")
+    fun findOne2(@PathVariable login: String): ResponseEntity<User> { // nb: @RequestParam() is for query string parameters
         return userRepository.findByLogin(login)
                 .map { user -> ResponseEntity(user, HttpStatus.OK) }
                 .orElse(ResponseEntity(HttpStatus.NOT_FOUND))
