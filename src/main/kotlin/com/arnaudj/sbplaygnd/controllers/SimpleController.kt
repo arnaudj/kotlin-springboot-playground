@@ -1,4 +1,4 @@
-package com.arnaudj.sbplaygnd
+package com.arnaudj.sbplaygnd.controllers
 
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
