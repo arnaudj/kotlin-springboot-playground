@@ -17,3 +17,11 @@ class User(
         var name: String,
         var description: String? = null,
         @Id @GeneratedValue var id: Long? = null)
+
+@Entity
+class Employee(
+        var login: String,
+        var name: String,
+        var description: String? = null,
+        var badgeNumber: Int,
+        @Id @GeneratedValue var id: Long? = null)
