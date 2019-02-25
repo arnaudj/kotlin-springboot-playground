@@ -19,7 +19,7 @@ class UserRestController(val userRepository: UserRepository) {
         return userRepository.findByLogin(login).orElseThrow { ElementNotFoundException("user") }
     }
 
-    // ResponseEntity based error handling
+    // ResponseEntity based error handling to return a pure Status-code:404 in absence of a @ControllerAdvice+@ExceptionHandler (else, servlet container will print an enriched 404 page)
     @GetMapping("/find2/{login}")
     fun findOne2(@PathVariable login: String): ResponseEntity<User> { // nb: @RequestParam() is for query string parameters
         return userRepository.findByLogin(login)
