@@ -11,6 +11,7 @@ import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 
+// loads a complete application, including any CommandLineRunner
 @SpringBootTest
 @AutoConfigureMockMvc
 class UserRestControllerIntegrationTest constructor(@Autowired val mockMvc: MockMvc) {

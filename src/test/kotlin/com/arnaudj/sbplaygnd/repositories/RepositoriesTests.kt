@@ -18,7 +18,7 @@ class RepositoriesTests @Autowired constructor(
     fun `find user by login`() {
         val user1 = User("root", "John Doe", "suid0 user")
         entityManager.persistAndFlush(user1)
-        val findUser1 = userRepository.findByLogin("root")
+        val findUser1 = userRepository.findByLogin("root").get()
         Assertions.assertThat(findUser1).isEqualTo(user1)
     }
 }
